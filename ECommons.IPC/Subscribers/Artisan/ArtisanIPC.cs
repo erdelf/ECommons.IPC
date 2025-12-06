@@ -17,7 +17,7 @@ public sealed class ArtisanIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "Artisan";
+    public override string InternalName { get; } = "Artisan";
 
     [EzIPC("GetEnduranceStatus")] public  Func<bool> GetEnduranceStatus{get; private set;}
     [EzIPC("SetEnduranceStatus")] public  Action<bool> SetEnduranceStatus{get; private set;}

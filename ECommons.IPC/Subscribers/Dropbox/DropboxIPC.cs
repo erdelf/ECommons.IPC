@@ -17,6 +17,6 @@ public sealed class DropboxIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "Dropbox";
+    public override string InternalName { get; } = "Dropbox";
     [EzIPC("IsBusy")] public Func<bool> IsBusy { get; private set;  }
 }

@@ -17,7 +17,7 @@ public sealed class QuestionableIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "Questionable";
+    public override string InternalName { get; } = "Questionable";
 
     [EzIPC("IsRunning")] public Func<bool> IsRunning{get; private set;}
     [EzIPC("GetCurrentQuestId")] public Func<string?> GetCurrentQuestId{get; private set;}

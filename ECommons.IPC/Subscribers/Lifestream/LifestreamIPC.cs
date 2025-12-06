@@ -16,7 +16,7 @@ public sealed class LifestreamIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "Lifestream";
+    public override string InternalName { get; } = "Lifestream";
 
     public static class Delegates
     {

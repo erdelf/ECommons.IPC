@@ -19,7 +19,7 @@ public sealed class VnavmeshIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "vnavmesh";
+    public override string InternalName { get; } = "vnavmesh";
 
     public static class Delegates
     {

@@ -11,8 +11,8 @@ namespace ECommons.IPC.Subscribers;
 public abstract class IPCBase
 {
     public static SafeWrapper DefaultWrapper { get; set; } = SafeWrapper.None;
-    public abstract string IPCPrefix { get; }
-    public virtual string InternalName => IPCPrefix;
+    public virtual string IPCPrefix => InternalName;
+    public abstract string InternalName { get; }
     public virtual SafeWrapper? Wrapper => null;
     public bool Available
     {

@@ -13,7 +13,7 @@ public sealed class AutoRetainerIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "AutoRetainer";
+    public override string InternalName { get; } = "AutoRetainer";
 
     [EzIPC("AutoRetainer.GC.EnqueueInitiation", false)] public Action EnqueueInitiation { get; private set; }
     [EzIPC("PluginState.AbortAllTasks")] public Action AbortAllTasks { get; private set; }

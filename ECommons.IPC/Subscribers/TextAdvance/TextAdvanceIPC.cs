@@ -18,7 +18,7 @@ public sealed class TextAdvanceIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = "TextAdvance";
+    public override string InternalName { get; } = "TextAdvance";
 
     public static class Delegates
     {

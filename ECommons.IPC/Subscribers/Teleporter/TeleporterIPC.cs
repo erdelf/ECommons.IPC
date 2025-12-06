@@ -18,7 +18,6 @@ public sealed class TeleporterIPC : IPCBase
     {
     }
 
-    public override string IPCPrefix { get; } = null;
     public override string InternalName => "Teleporter";
 
     public static class Delegates

@@ -7,6 +7,7 @@ using ECommons.IPC.Subscribers.Questionable;
 using ECommons.IPC.Subscribers.Teleporter;
 using ECommons.IPC.Subscribers.TextAdvance;
 using ECommons.IPC.Subscribers.Vnavmesh;
+using ECommons.IPC.Subscribers.WrathCombo;
 using ECommons.Logging;
 using System;
 using System.Collections.Generic;
@@ -25,4 +26,5 @@ public static class ECommonsIPC
     public static QuestionableIPC Questionable { get { field ??= new(); return field; } }
     public static TextAdvanceIPC TextAdvance { get { field ??= new(); return field; } }
     public static VnavmeshIPC Vnavmesh { get { field ??= new(); return field; } }
+    public static WrathComboIPC WrathComboIPC { get { field ??= new(); return field; } }
 }

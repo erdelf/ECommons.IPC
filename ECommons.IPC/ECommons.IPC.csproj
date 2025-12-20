@@ -2,15 +2,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <Authors>NightmareXIV</Authors>
-        <BaseVersion>1.0.0.6</BaseVersion>
-        <PackageKind></PackageKind>
+        <BaseVersion>1.0.0.8</BaseVersion>
+        <PackageKind>stg</PackageKind>
         <VersionSuffix Condition="'$(PackageKind)' != ''">-$(PackageKind)</VersionSuffix>
         <Version>$(BaseVersion)$(VersionSuffix)</Version>
         <Configurations>Debug;Release</Configurations>
     </PropertyGroup>
 
     <PropertyGroup>
-        <TargetFramework>net9.0-windows7.0</TargetFramework>
+        <TargetFramework>net10.0-windows7.0</TargetFramework>
         <Platforms>x64</Platforms>
         <LangVersion>preview</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -50,7 +50,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="ECommons" Version="3.0.1.32" />
+      <PackageReference Include="ECommons" Version="3.1.0.1" />
     </ItemGroup>
 
     <ItemGroup>

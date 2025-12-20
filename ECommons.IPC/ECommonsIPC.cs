@@ -30,6 +30,5 @@ public static class ECommonsIPC
     public static VnavmeshIPC Vnavmesh { get { field ??= new(); return field; } }
     public static WrathComboIPC WrathCombo { get { field ??= new(); return field; } }
     public static WeathermanIPC Weatherman { get { field ??= new(); return field; } }
-    public static WrathComboIPC WrathCombo { get { field ??= new(); return field; } }
     public static BossModIPC BossMod { get { field ??= new(); return field; } }
 }

@@ -22,8 +22,8 @@ public sealed class TeleporterIPC : IPCBase
 
     public static class Delegates
     {
-        public delegate bool TeleportDelegate(uint aetheryteId, byte subAetheryteId);
+        public delegate bool Teleport(uint aetheryteId, byte subAetheryteId);
     }
 
-    [EzIPC("Teleport", false)] public TeleportDelegate Teleport{get; private set;}
+    [EzIPC("Teleport", false)] public Teleport Teleport{get; private set;}
 }

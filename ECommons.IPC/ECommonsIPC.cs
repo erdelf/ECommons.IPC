@@ -12,6 +12,7 @@ using ECommons.IPC.Subscribers.WrathCombo;
 
 namespace ECommons.IPC;
 
+using ECommons.IPC.Subscribers.CashFlow;
 using Subscribers.AutoDuty;
 using Subscribers.Gearsetter;
 using Subscribers.PandorasBox;
@@ -38,4 +39,5 @@ public static class ECommonsIPC
     public static PandorasBoxIPC PandorasBox { get { field ??= new(); return field; } }
     public static GearsetterIPC Gearsetter { get { field ??= new(); return field; } }
     public static RotationSolverRebornIPC RotationSolverReborn { get { field ??= new(); return field; } }
+    public static CashFlowIPC CashFlow { get { field ??= new(); return field; } }
 }

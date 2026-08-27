@@ -22,6 +22,8 @@ using ECommons.IPC.Subscribers.AetherBags;
 
 namespace ECommons.IPC;
 
+using ECommons.IPC.Subscribers.Battlevest;
+using ECommons.IPC.Subscribers.Splatoon;
 using Subscribers.GlamourLog;
 
 public static class ECommonsIPC
@@ -48,4 +50,6 @@ public static class ECommonsIPC
     public static SkippyIPC Skippy => field ??= new();
     public static AetherBagsIPC AetherBags => field ??= new();
     public static GlamourLogIPC GlamourLog => field ??= new();
+    public static BattlevestIPC Battlevest => field ??= new();
+    public static SplatoonIPC Splatoon => field ??= new();
 }

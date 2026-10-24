@@ -66,5 +66,5 @@ public sealed class AutoDutyIPC : IPCBase
      * @param string plugin identifier
      * @param bool enable or disable the plugin config. On false, returns to default
      */
-    [EzIPC] public Func<string, bool> PluginConfig { get; private set; }
+    [EzIPC] public Action<string, bool> PluginConfig { get; private set; }
 }

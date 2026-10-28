@@ -20,6 +20,7 @@ public sealed class AutoDutyIPC : IPCBase
     public static class Delegates
     {
         public delegate void RunDelegate(uint territoryType, int loops = 0, bool bareMode = false);
+        public delegate void RunForPluginDelegate(string pluginName, uint territoryType, int loops = 0, bool bareMode = false);
     }
 
     /**
@@ -67,4 +68,6 @@ public sealed class AutoDutyIPC : IPCBase
      * @param bool enable or disable the plugin config. On false, returns to default
      */
     [EzIPC] public Action<string, bool> PluginConfig { get; private set; }
+
+    [EzIPC] public RunForPluginDelegate RunForPlugin { get; private set; }
 }
